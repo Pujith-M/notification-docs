@@ -163,7 +163,7 @@
         "deprecated": false
       }
     },
-    "/cac0550b-0f45-409c-abbf-6e4a4d0478e3/unsubscribe": {
+    "/{address}/unsubscribe": {
       "post": {
         "tags": [
           "Unsubscribe"
@@ -178,7 +178,17 @@
           }
         },
         "deprecated": false
-      }
+      },
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "address",
+          "in": "path",
+          "required": true
+        }
+      ]
     },
     "/subscriptions/firebase/unsubscribe": {
       "post": {
